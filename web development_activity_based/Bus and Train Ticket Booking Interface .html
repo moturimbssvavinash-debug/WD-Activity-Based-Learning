@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Booking</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #eaf4ff;
+}
+header {
+    background: #075985;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+form, .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h2 { color: #075985; }
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #0284c7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover { background: #0369a1; }
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.card {
+    flex: 1 1 200px;
+    text-align: center;
+    box-shadow: 0 2px 8px #ccc;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th { background: #bae6fd; }
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.seats button { width: 55px; }
+footer {
+    background: #075985;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+@media(max-width:600px) {
+    .services { flex-direction: column; }
+    .container { width: 95%; }
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Travel Booking</h1>
+<p>Explore the World with Comfort!</p>
+</header>
+<div class="container">
+<form>
+<h2>Book Your Journey</h2>
+<label>Source</label>
+<input type="text" placeholder="Enter source city" required>
+<label>Destination</label>
+<input type="text" placeholder="Enter destination city" required>
+<label>Travel Date</label>
+<input type="date" required>
+<label>Return Date</label>
+<input type="date">
+<label>Passengers</label>
+<input type="number" min="1" max="10" value="1">
+<label>Travel Service</label>
+<select>
+<option>Bus</option>
+<option>Train</option>
+<option>Flight</option>
+</select>
+<h2>Select Your Seat</h2>
+<div class="seats">
+<button type="button">A1</button>
+<button type="button">A2</button>
+<button type="button">B1</button>
+<button type="button">B2</button>
+<button type="button">C1</button>
+<button type="button">C2</button>
+</div>
+<label>Passenger Name</label>
+<input type="text" placeholder="Full Name" required>
+<label>Email</label>
+<input type="email" placeholder="Email Address" required>
+<button type="submit">Book Now</button>
+</form>
+<h2>Available Services</h2>
+<div class="services">
+<div class="card">
+<h3>Bus</h3>
+<p>AC Comfortable Bus</p>
+<p>Fare: ₹500</p>
+<button type="button">Choose Bus</button>
+</div>
+<div class="card">
+<h3>Train</h3>
+<p>Express Train</p>
+<p>Fare: ₹800</p>
+<button type="button">Choose Train</button>
+</div>
+<div class="card">
+<h3>Flight</h3>
+<p>indigo Flight</p>
+<p>Fare: ₹2500</p>
+<button type="button">Choose Flight</button>
+</div>
+</div>
+<h2>Fare Information</h2>
+<table>
+<tr><th>Service</th><th>Fare</th><th>Class</th></tr>
+<tr><td>Bus</td><td>₹500</td><td>AC</td></tr>
+<tr><td>Train</td><td>₹800</td><td>Sleeper</td></tr>
+<tr><td>Flight</td><td>₹2500</td><td>Economy</td></tr>
+</table>
+</div>
+<footer>
+<p>© 2026 Travel Booking Website</p>
+</footer>
+</body>
+</html>

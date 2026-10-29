@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <style>
+        /* Basic CSS */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f5fa;
+            color: #333;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #175452;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #facc15;
+            transform: scale(1.1);
+        }
+
+        /* Profile section */
+        header {
+            background: linear-gradient(120deg, #28def6, #48bef5);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 1.5s ease;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* General sections */
+        section {
+            background-color: rgb(243, 241, 242);
+            margin: 20px auto;
+            padding: 25px;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #d1d5db;
+            animation: fadeIn 1.5s ease;
+        }
+
+        h2 {
+            color: #563fd4;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 10px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .skills span:hover {
+            background-color: #c45050;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Project cards */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background-color: #eff6ff;
+            padding: 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 12px #cbd5e1;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #b11212;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #1e3a8a;
+        }
+
+        /* Contact form */
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #11bbe1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Simple animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 600px) {
+            nav a {
+                margin: 7px;
+                font-size: 14px;
+            }
+
+            header {
+                padding: 35px 15px;
+            }
+
+            section {
+                width: 95%;
+                padding: 18px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Profile -->
+    <header id="home">
+        <h1>Avinash</h1>
+        <p>First-Year B.Tech CSM Student</p>
+        <p>Interested in Artificial Intelligence and Programming</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </header>
+
+    <!-- About Me -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Avinash, a first-year B.Tech student
+            interested in technology, programming, and Artificial
+            Intelligence. I enjoy learning new skills and creating
+            simple projects.
+        </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Educational Qualifications</h2>
+        <ul>
+            <li>B.Tech - Computer Science and Mathematics (CSM)
+                <br>College: NRI University
+            </li>
+            <li>Intermediate - Add your college name</li>
+            <li>SSC - Add your school name</li>
+        </ul>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>Basic CSS</span>
+            <span>Python</span>
+            <span>C Programming</span>
+            <span>Artificial Intelligence</span>
+            <span>Prompt Engineering</span>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Learning new technologies</li>
+            <li>Exploring AI tools</li>
+            <li>Listening to music</li>
+            <li>Playing games</li>
+            <li>Reading and learning</li>
+        </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>A personal website created using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>Student Marks Calculator</h3>
+                <p>A beginner project to calculate student marks and percentage.</p>
+            </div>
+
+            <div class="card">
+                <h3>E-Commerce Website</h3>
+                <p>A basic online shopping page displaying products and prices.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI Tools Presentation</h3>
+                <p>A presentation explaining Generative AI and its applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Learning web development fundamentals.</li>
+            <li>Practising Python programming.</li>
+            <li>Exploring Generative AI tools.</li>
+        </ul>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p>
+            My resume contains my educational details,
+            technical skills, projects, and career interests.
+        </p>
+
+        <!-- Replace resume.pdf with your own PDF file -->
+        <a href="resume.pdf" class="btn" download>
+            Download Resume
+        </a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: your-email@example.com</p>
+        <p>Phone: Add your phone number</p>
+        <p>Location: Andhra Pradesh, India</p>
+
+        <h3>Send a Message</h3>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"
+                      required></textarea>
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Avinash | My Personal Portfolio</p>
+        <p>Designed using HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
